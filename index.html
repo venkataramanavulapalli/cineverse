@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CineVerse</title>
+
+  <style>
+
+  
+    body{
+      background-color: #000000;
+    }
+    *{
+      margin: 0;
+      
+    }
+
+    .nav-head{
+      background-color:#0d0d0d;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      font-family: fantasy;
+      padding: 0px;
+      font-size: 19px;
+      align-items: center;
+      height:70px;
+    }
+    .cineversee{
+      padding-left: 25px;
+      font-size: 40px;
+    }
+
+    .nav-content{
+      margin: 10px;
+      width: 50%;
+      background-color: #232323;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+      font-size: 20px;
+      height: 35px;
+    }
+
+    .herosection{
+      background-color: #000000;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      font-family: "Times New Roman";
+      height:350px;
+    }
+
+    .p1{
+      background-color:#ffffff;
+      color: #000000;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .header{
+      font-size: 25px;
+      color: #ffffff;
+      padding-top: 15px;
+    }
+
+    .today{
+      font-family: fantasy;
+    }
+
+    .p2{
+      font-family: fantasy;
+      color: #ffffff;
+      padding-top: 10px;
+    }
+
+    .but-1{
+      background-color: #e32929;
+      color: white;
+      border-radius: 5px;
+      margin-top:10px ;
+      height: 23px;
+      border: none;
+    }
+
+    .but-2{
+      margin-top: 10px;
+    }
+
+    .imagee{
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .link{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: white;
+      padding-top: 10px;
+    }
+
+    a{
+      margin-left: 5px;
+      text-decoration: underline;
+      color: white;
+    }
+
+    .bottom{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #222222;
+      height:55px;
+      font-family: fantasy;
+    }
+
+    .emoji-sec{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 2px;
+      color: white;
+      padding-top: 10px;
+    }
+
+    .emoji-para{
+      font-size: 10px;
+      padding-top: 1px;
+      padding-right: 10px;
+    }
+
+    .menu{
+      background-color:#000000;
+      padding:20px;
+    }
+
+    .menu-head{
+      text-align: center;
+      font-family: fantasy;
+      color: white;
+      padding-top: 10px;
+    }
+
+    .menu-para{
+      text-align: center;
+      font-family: "Times New Roman";
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 15px;
+    }
+
+    .cards-section{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+    }
+
+    .card{
+      width: 150px;
+      height: 300px;
+      display:flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    .imageee{
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-content{
+      background-color: #343434;
+      color: white;
+      width: 100%;
+      height: 50%;
+      font-size: 12px;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-family: fantasy;
+    }
+
+    .genre{
+      background-color: #222222;
+    }
+
+    .genre-head{
+      color: white;
+      text-align: center;
+      font-family: fantasy;
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
+
+    .genre-bottom{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 10px;
+      padding-top: 0;
+      padding-right:0px;
+    }
+
+    .contact{
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .contact-head{
+      color: white;
+      padding-top: 10px;
+    }
+
+    .contact-para{
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .contact-btn{
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #d92121;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      font-family: fantasy;
+    }
+
+    .footer{
+      background-color: #111111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .footer p{
+      padding-top: 5px;
+    }
+    
+    @media screen and (max-width: 768px){
+
+  .nav-head{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  .nav-content{
+    width: 90%;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .herosection{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .p1{
+    width: auto;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .imagee{
+    width: 220px;
+    height: 220px;
+    margin-top: 15px;
+  }
+
+  .link{
+    justify-content: center;
+  }
+
+  .cards-section{
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 140px;
+    margin: 8px;
+  }
+
+  .bottom{
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+
+  .genre-bottom{
+    flex-wrap: wrap;
+  }
+
+  .menu-head,
+  .contact-head{
+    font-size: 30px;
+  }
+
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="nav-head">
+    <h1 class="cineversee">CineVerse</h1>
+
+    <div class="nav-content">
+      <p>Home</p>
+      <p>Movies</p>
+      <p>Series</p>
+      <p>Contact</p>
+    </div>
+  </div>
+
+  <div class="herosection">
+
+    <div class="top">
+      <p class="p1">Unlimited Entertainment</p>
+
+      <h1 class="header">
+        Watch Movies & Series.<br>
+        <span class="today">Anytime, Anywhere</span>
+      </h1>
+
+      <p class="p2">
+        Stream the latest movies, trending series, and exclusive shows
+        in one place. No limits, just entertainment.
+      </p>
+
+      <button class="but-1">Start Watching</button>
+      <button class="but-2">Browse Shows</button>
+
+      <div class="link">
+        <p>Explore our</p>
+        <a href="#">top picks</a>
+      </div>
+    </div>
+
+    <div class="image">
+      <img class="imagee" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202501/is-theatre-going-culture-in-india-taking-a-hit-173122213-3x4.jpeg?VersionId=I6LAkhUmysxk1Jh.arcgGGNuB7amr8Nr ">
+    </div>
+
+  </div>
+
+  <div class="bottom">
+    <div class="emoji-sec">🎬<p class="emoji-para">Latest Movies</p></div>
+    <div class="emoji-sec">📺<p class="emoji-para">Top Series</p></div>
+    <div class="emoji-sec">⚡<p class="emoji-para">Fast Streaming</p></div>
+    <div class="emoji-sec">🌍<p class="emoji-para">Watch Anywhere</p></div>
+  </div>
+
+  <div class="menu">
+    <h1 class="menu-head">Trending Now</h1>
+    <p class="menu-para">Watch the most popular movies and series</p>
+
+    <div class="cards-section">
+
+      <div class="card">
+        <img class="imageee" src="https://miro.medium.com/v2/1*hhiYiYFvsgBvHWSXTgEs7w.jpeg">
+        <div class="card-content">
+          <h4>Interstellar</h4>
+          <p>A journey beyond space <br>and time.</p>
+          <h2>⭐8.7</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="imageee" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTteJseU3kBNkhUG_MXqamtk45cmF5RivaNoDxqXg1Pz_PJiaOfoNdy1_k&s=10">
+        <div class="card-content">
+          <h4>Stranger Things</h4>
+          <p>Mystery, horror, and adventure</p>
+          <h2>⭐8.6</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg">
+        <div class="card-content">
+          <h4>Avengers</h4>
+          <p>Heroes unite to save the world</p>
+          <h2>⭐8.4</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="imageee" src="https://loyolamaroon.com/wp-content/uploads/2020/04/MoneyHeistPart4-608x900.jpg">
+        <div class="card-content">
+          <h4>Money Heist</h4>
+          <p>The greatest heist ever planned</p>
+          <h2>⭐8.2</h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="genre">
+    <h2 class="genre-head">Browse by Genre</h2>
+
+    <div class="genre-bottom">
+      <div class="emoji-sec">🎬
+        <a href="action.html" > action </a>
+      </div>
+      <div class="emoji-sec">😂<a href="/comedy.html" >comedy</a>
+      </div>
+      <div class="emoji-sec">😱<a href="/horror.html" > Horror </a>
+      </div>
+      <div class="emoji-sec">❤️
+      <a href="/romance.html" > Roman </a>
+      </div>
+      <div class="emoji-sec">🚀<a href="/sci-fi.html" > Sci-fi </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h1 class="contact-head">About & Contact</h1>
+
+    <p class="contact-para">
+      CineVerse brings all your favorite movies and series into one place.
+      Stream anytime and enjoy unlimited entertainment.
+    </p>
+
+    <p>Email: cineverse@gmail.com</p>
+    <p>Phone: +91 91234 56789</p>
+
+    <button class="contact-btn">Start Watching</button>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 CineVerse</p>
+    <p>Stream. Chill. Repeat.</p>
+  </div>
+
+</body>
+</html>

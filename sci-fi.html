@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sci-Fi Movies - CineVerse</title>
+
+  <style>
+    body, h1, h2, h3, h4, p{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: #000000;
+      color: white;
+      font-family: "Times New Roman";
+    }
+
+    .nav-head{
+      background-color:#000000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: fantasy;
+      flex-wrap: wrap;
+    }
+
+    .nav-content{
+      display: flex;
+      width: 40%;
+      justify-content: space-around;
+      background-color: #232323;
+      border-radius: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero{
+      background-image: url(https://w0.peakpx.com/wallpaper/718/607/HD-wallpaper-space-planet-sci-fi-spaceship-video-game-eve-online.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 280px;
+      padding: 30px;
+    }
+
+    .hero h1{
+      font-size: 35px;
+      padding-bottom: 10px;
+    }
+
+    .hero p{
+      color: #d1d5db;
+      padding-bottom: 8px;
+    }
+
+    .cards-section{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background-color: #0d0d0d;
+      flex-wrap: wrap;
+    }
+
+    .card{
+      width: 170px;
+      
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+    }
+
+    .imageee{
+      width: 100%;
+      height: 210px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-content{
+      background-color: #343434;
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      padding: 8px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-top: 8px;
+    }
+
+    .buts{
+      background-color: #b61005;
+      color: white;
+      border-radius: 7px;
+      border: none;
+      font-family: fantasy;
+    }
+
+    .back{
+      background-color: #232323;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+
+    @media(max-width:768px){
+
+      .nav-head{
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-content{
+        width: 80%;
+        margin-top: 10px;
+      }
+
+      .hero{
+        height: auto;
+        padding: 20px;
+      }
+
+      .hero h1{
+        font-size: 28px;
+      }
+
+      .card{
+        width: 150px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="nav-head">
+    <h1>CineVerse</h1>
+
+    <div class="nav-content">
+      <a href="action.html">Action</a>
+      <a href="comedy.html">Comedy</a>
+      <a href="horror.html">Horror</a>
+      <a href="romance.html">Romance</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Sci-Fi Movies</h1>
+    <p>Future worlds, cosmic mysteries, and journeys beyond imagination.</p>
+    <p>Step into the unknown.</p>
+  </div>
+
+  <div class="cards-section">
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg">
+      <div class="card-content">
+        <h4>Interstellar</h4>
+        <p>A journey beyond space and time.</p>
+        <br>
+        <h2>⭐8.7</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg">
+      <div class="card-content">
+        <h4>Inception</h4>
+        <p>Dreams collapse into dangerous reality.</p>
+        <br>
+        <h2>⭐8.8</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/I/51EG732BV3L.jpg">
+      <div class="card-content">
+        <h4>The Matrix</h4>
+        <p>Reality is not what it seems.</p>
+        <br>
+        <h2>⭐8.7</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg">
+      <div class="card-content">
+        <h4>Blade Runner 2049</h4>
+        <p>A future buried beneath silence.</p>
+        <br>
+        <h2>⭐8.0</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg">
+      <div class="card-content">
+        <h4>Dune</h4>
+        <p>Destiny rises on a desert planet.</p>
+        <br>
+        <h2>⭐8.0</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/I/41kTVLeW1CL.jpg">
+      <div class="card-content">
+        <h4>Avatar</h4>
+        <p>A new world changes everything.</p>
+        <br>
+        <h2>⭐7.9</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg">
+      <div class="card-content">
+        <h4>The Martian</h4>
+        <p>Alone on Mars, survival becomes science.</p>
+        <br>
+        <h2>⭐8.0</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_.jpg">
+      <div class="card-content">
+        <h4>Gravity</h4>
+        <p>One mistake leaves only space.</p>
+        <br>
+        <h2>⭐7.7</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="back">
+    <h1>CineVerse</h1>
+    <button style="color: black; border-radius: 8px; background-color: #343434;
+      "<a href="/Cineverse.html">Back to Home</a>
+  </div>
+
+</body>
+</html>

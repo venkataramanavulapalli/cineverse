@@ -4,6 +4,57 @@
   <title>Comedy Movies - CineVerse</title>
 
   <style>
+    @media screen and (max-width: 768px){
+
+  .nav-head{
+    flex-direction: column;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .nav-content{
+    width: 90%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .hero{
+    height: auto;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero h1{
+    font-size: 28px;
+  }
+
+  .hero p{
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .cards-section{
+    height: auto;
+    padding: 15px;
+  }
+
+  .card{
+    width: 140px;
+    height: 290px;
+    margin: 8px;
+  }
+
+  .card-content{
+    font-size: 11px;
+  }
+
+  .back{
+    padding: 15px;
+  }
+
+}
 
     body, h1, h2, h3, h4, p{
       margin: 0;
@@ -62,7 +113,7 @@
       display: flex;
       justify-content: center;
       padding: 20px;
-      height: 800px;
+      height: auto;
       background-color: #0d0d0d;
       flex-wrap: wrap;
       
@@ -101,7 +152,7 @@
 
     a{
       color: white;
-      text-decoration: underline;
+      text-decoration: none;
     }
     .buts{
       background-color: #b61005;
@@ -219,8 +270,10 @@
   </div>
 
   <div class="back">
-    <a href="/Cineverse.html"> ⬅️ Back to Home</a>
-  </div>
+  <h1>CineVerse</h1>
+  <button style="color: black; border-radius: 8px; background-color: #343434;
+      " <a href="/Cineverse.html">Back to Home</a>
+</div>
 
 </body>
 </html>

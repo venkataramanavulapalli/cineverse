@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CineVerse</title>
+
+  <style>
+    body,h1,h2,h3,h4,p{
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      background-color:#000000;
+      color:white;
+      font-family:"Times New Roman";
+    }
+
+    .nav-head{
+      background-color:#050505;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 40px;
+    }
+
+    .nav-content{
+      background-color:#161616;
+      border-radius:10px;
+      padding:10px 25px;
+      display:flex;
+      gap:40px;
+    }
+
+    a{
+      color:white;
+      text-decoration:none;
+    }
+
+    .hero{
+      background-image:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+      background-size:cover;
+      background-position:center;
+      padding:70px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .hero-left{
+      width:52%;
+    }
+
+    .tag{
+      background-color:#a30000;
+      display:inline-block;
+      padding:8px 15px;
+      border-radius:8px;
+      margin-bottom:18px;
+      font-size:18px;
+    }
+
+    .hero-left h1{
+      font-size:60px;
+      line-height:70px;
+      margin-bottom:20px;
+    }
+
+    .red{
+      color:#ff1f1f;
+    }
+
+    .hero-left p{
+      font-size:22px;
+      color:#d1d5db;
+      line-height:32px;
+      margin-bottom:25px;
+    }
+
+    .hero-buttons button{
+      border:none;
+      padding:12px 22px;
+      border-radius:8px;
+      margin-right:12px;
+      font-size:18px;
+      color:white;
+    }
+
+    .btn-red{
+      background-color:#c10000;
+    }
+
+    .btn-dark{
+      background-color:#1f1f1f;
+    }
+
+    .hero-right img{
+      width:430px;
+      height:250px;
+      border-radius:14px;
+    }
+
+    .features{
+      background-color:#0f0f0f;
+      display:flex;
+      justify-content:space-around;
+      padding:25px;
+      margin:25px 40px;
+      border-radius:14px;
+      text-align:center;
+    }
+
+    .features h4{
+      margin-top:8px;
+      font-size:22px;
+    }
+
+    .features p{
+      color:#cfcfcf;
+      margin-top:5px;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-top:35px;
+      margin-bottom:10px;
+      font-size:48px;
+    }
+
+    .section-sub{
+      text-align:center;
+      color:#d1d5db;
+      margin-bottom:25px;
+      font-size:22px;
+    }
+
+    .cards-section{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      padding:20px;
+      gap:20px;
+    }
+
+    .card{
+      width:230px;
+      background-color:#161616;
+      border-radius:12px;
+      overflow:hidden;
+      text-align:center;
+      padding-bottom:15px;
+    }
+
+    .imageee{
+      width:100%;
+      height:310px;
+    }
+
+    .card-content{
+      padding:12px;
+    }
+
+    .card-content h4{
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    .card-content p{
+      color:#d1d5db;
+      font-size:19px;
+      line-height:28px;
+      min-height:70px;
+    }
+
+    .card-content h2{
+      color:white;
+      margin-top:8px;
+      margin-bottom:12px;
+      font-size:34px;
+    }
+
+    .buts{
+      background-color:#c10000;
+      color:white;
+      border:none;
+      border-radius:8px;
+      padding:9px 20px;
+      font-size:18px;
+    }
+
+    .genre{
+      background-color:#111111;
+      margin:40px;
+      border-radius:14px;
+      padding:30px;
+      text-align:center;
+    }
+
+    .genre h2{
+      margin-bottom:25px;
+      font-size:40px;
+    }
+
+    .genre-box{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:18px;
+    }
+
+    .genre-card{
+      width:160px;
+      padding:25px;
+      background-color:#181818;
+      border-radius:12px;
+      font-size:24px;
+    }
+
+    .about{
+      text-align:center;
+      padding:45px 20px;
+    }
+
+    .about h2{
+      font-size:46px;
+      margin-bottom:18px;
+    }
+
+    .about p{
+      font-size:22px;
+      color:#d1d5db;
+      margin-bottom:12px;
+    }
+
+    .footer{
+      background-color:#111111;
+      text-align:center;
+      padding:25px;
+      color:#d1d5db;
+      font-size:20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="nav-head">
+    <h1>CineVerse</h1>
+
+    <div class="nav-content">
+      <a href="#">Movies</a>
+      <a href="#">Series</a>
+      <a href="#">Anime</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <div class="hero">
+
+    <div class="hero-left">
+      <div class="tag">🎬 Unlimited Entertainment</div>
+
+      <h1>
+        Watch Movies & Series.<br>
+        <span class="red">Anytime, Anywhere</span>
+      </h1>
+
+      <p>
+        Stream the latest blockbusters, trending series, and exclusive shows in one place.
+        No limits, just entertainment.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-red">▶ Start Watching</button>
+        <button class="btn-dark">Browse Shows</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="https://static.vecteezy.com/ti/vettori-gratis/p1/1214284-film-tempo-poster-con-cinema-elementi-e-banner-gratuito-vettoriale.jpg">
+    </div>
+
+  </div>
+
+  <div class="features">
+    <div>
+      <h4>🎬 Latest Movies</h4>
+      <p>New releases every week</p>
+    </div>
+
+    <div>
+      <h4>📺 Top Series</h4>
+      <p>Binge-worthy shows</p>
+    </div>
+
+    <div>
+      <h4>⚡ Fast Streaming</h4>
+      <p>Buffer-free experience</p>
+    </div>
+
+    <div>
+      <h4>🌍 Watch Anywhere</h4>
+      <p>On any device</p>
+    </div>
+  </div>
+
+  <h1 class="section-title">Trending Now</h1>
+  <p class="section-sub">Watch the most popular movies and series</p>
+
+  <div class="cards-section">
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg">
+      <div class="card-content">
+        <h4>Interstellar</h4>
+        <p>A journey beyond space and time.</p>
+        <h2>⭐ 8.7</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_.jpg">
+      <div class="card-content">
+        <h4>Titanic</h4>
+        <p>adventure, love and romantic.</p>
+        <h2>⭐ 8.6</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg">
+      <div class="card-content">
+        <h4>Avengers</h4>
+        <p>Heroes unite to save the world.</p>
+        <h2>⭐ 8.4</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imageee" src="https://loyolamaroon.com/wp-content/uploads/2020/04/MoneyHeistPart4-608x900.jpg">
+      <div class="card-content">
+        <h4>Money Heist</h4>
+        <p>The greatest heist ever planned.</p>
+        <h2>⭐ 8.2</h2>
+        <button class="buts">Watch Now</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="genre">
+    <h2>Browse by Genre</h2>
+
+    <div class="genre-box">
+      <div class="genre-card">🎬
+      <a href="action.html">Action</a>
+      </div>
+      <div class="genre-card">😂
+        <a href="/comedy.html">comedy</a>
+      </div>
+      <div class="genre-card">👻 <a href="/horror.html" > Horror </a>
+      </div>
+      <div class="genre-card">💗 <a href="/romance.html" > Roman </a>
+      </div>
+      <div class="genre-card">🚀 <a href="/sci-fi.html" > Sci-fi </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <h2>About & Contact</h2>
+    <p>CineVerse brings all your favorite movies and series into one place.</p>
+    <p>Email: cineverse@gmail.com</p>
+    <p>Phone: +91 91234 56789</p>
+
+    <button class="buts">Start Watching</button>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 CineVerse</p>
+    <p>Stream. Chill. Repeat.</p>
+  </div>
+
+</body>
+</html>
